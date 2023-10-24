@@ -21,7 +21,7 @@ lidar.stop_motor()
 lidar.disconnect()
 
 for i in scans:
-    q, a, d = i #q = quality of scan, a = angle, d = distance from origin
+    q, a, d = i #(q = quality of scan, a = angle, d = distance from origin) All of this is an educated guess, and the sensor could be reporting something else
     angles.append(a)
     distances.append(d/10) #distance comes from the sensor in millimeters, change the value at which d is divided by to change unit
 
